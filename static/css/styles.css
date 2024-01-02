@@ -1,0 +1,269 @@
+/* Basic Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: #333;
+}
+
+.task-input div {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.task-input input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.task-input button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.task-input button:hover {
+    background-color: #0056b3;
+}
+
+.task-list ul {
+    list-style: none;
+}
+
+.task-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.task-text {
+    flex-grow: 1;
+    margin-left: 10px;
+}
+
+.task-text.completed {
+    text-decoration: line-through;
+}
+
+.check-task-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.task-actions, .edit-actions {
+    margin-left: auto;
+}
+
+.task-actions button, .edit-actions button {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.task-actions button.edit-task-btn {
+    background-color: #ffca28;
+}
+
+.task-actions button.delete-task-btn, .edit-actions button.cancel-edit-btn {
+    background-color: #ff4d4d;
+}
+
+.edit-actions button.confirm-edit-btn {
+    background-color: #28a745;
+}
+
+.task-actions button:hover, .edit-actions button:hover {
+    opacity: 0.9;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.8em;
+}
+.check-task-btn {
+    background-color: #28a745;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    padding: 5px 8px;
+    border-radius: 50%;
+}
+
+.task-text.completed {
+    text-decoration: line-through;
+    color: #6c757d;
+}
+/* [previous CSS styles remain unchanged] */
+
+.task-item {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.task-text {
+    flex-grow: 1;
+    margin-left: 10px;
+}
+
+.task-text.completed {
+    text-decoration: line-through;
+    color: #6c757d;
+}
+
+.check-task-btn, .edit-task-btn, .delete-task-btn {
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 8px;
+}
+
+.check-task-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+.edit-task-btn {
+    background-color: #ffc107;
+    color: black;
+}
+
+.delete-task-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+.edit-actions {
+    display: flex;
+    align-items: center;
+}
+
+.edit-input {
+    margin-right: 10px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.confirm-edit-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 5px 8px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.cancel-edit-btn {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    padding: 5px 8px;
+    border-radius: 5px;
+}
+
+
+.task-text, .edit-input {
+    flex-grow: 1;
+    margin-left: 10px;
+    font-size: 16px; /* match the font size of task text */
+    color: #333; /* match the text color */
+}
+
+.edit-input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff; /* background to match the task item */
+    border: none; /* remove border to blend in */
+    outline: none; /* remove outline for focus state */
+}
+
+/* [rest of the CSS remains the same] */
+.task-text.completed {
+    text-decoration: line-through;
+    color: #6c757d;
+    opacity: 0.7; /* Optional: for a more distinct completed look */
+}
+
+.task-text.pending {
+    /* Styles for tasks that are not completed */
+    color: #333; /* Regular text color */
+    text-decoration: none; /* Ensure no line-through */
+}
+
+.error-message {
+    color: #dc3545; /* Red color for errors */
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+.error-message {
+    color: #dc3545; /* Red color for errors */
+    margin-top: 10px;
+    font-size: 0.9em;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ffd4d4; /* Light red background */
+    border: 1px solid #dc3545;
+    display: flex;
+    align-items: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.error-message::before {
+    content: '⚠️'; /* Warning symbol */
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

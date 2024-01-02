@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic To-Do List</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Dynamic To-Do List</h1>
+        </header>
+        
+        <section class="task-input">
+            <div id="taskForm">
+                <input type="text" id="newTask" placeholder="Enter a new task" required>
+                <button id="submit">Add Task</button>
+                
+            </div>
+            <div id="error-message" class="error-message"></div>
+        </section>
+
+        <section class="task-list">
+            <ul id="tasks">
+                <!-- 
+                <li class="task-item">
+                    <button class="check-task-btn" style="display: none;">✔</button>
+                    <span class="task-text completed">Completed Task</span>
+                    <button class="edit-task-btn" style="display: none;">Edit</button>
+                    <button class="delete-task-btn">Delete</button>
+                </li>
+                
+                
+                <li class="task-item">
+                    <button class="check-task-btn">✔</button>
+                    <span class="task-text pending">Not Completed Task</span>
+                    <button class="edit-task-btn">Edit</button>
+                    <button class="delete-task-btn">Delete</button>
+                    <div class="edit-actions" style="display: none;">
+                        <input type="text" class="edit-input" value="Not Completed Task">
+                        <button class="confirm-edit-btn">Confirm</button>
+                        <button class="cancel-edit-btn">Cancel</button>
+                    </div>
+                </li>
+
+                
+                <li class="task-item">
+                    <button class="check-task-btn" style="display: none;">✔</button>
+                    <span class="task-text" style="display: none;">Task in Edit Mode</span>
+                    <input type="text" class="edit-input" value="Task in Edit Mode" style="display: block;">
+                    <button class="edit-task-btn" style="display: none;">Edit</button>
+                    <button class="delete-task-btn" style="display: none;">Delete</button>
+                    <div class="edit-actions">
+                        <button class="confirm-edit-btn">Confirm</button>
+                        <button class="cancel-edit-btn">Cancel</button>
+                    </div>
+                </li>
+                -->
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>Dynamic To-Do List © 2023</p>
+    </footer>
+</body>
+</html>
